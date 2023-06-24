@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饿了么 用户登陆</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../framework/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="h-full flex flex-col">
+    <header class="w-full z-10 h-16 bg-blue-500 text-gray-50 text-xl flex justify-center items-center">用户登录</header>
+<!--填写用户名和密码部分-->
+    <ul class="m-4">
+        <li class="flex mt-2 ">
+            <div class="w-1/4 font-bold text-xl">
+                手机号码：
+            </div>
+            <div class="ml-2 w-3/4">
+                <input type="text" placeholder="手机号码" class="h-full w-full outline-0">
+            </div>
+        </li>
+        <li class="flex mt-2">
+            <div class="w-1/4 font-bold text-xl">
+                密码：
+            </div>
+            <div class="ml-2 w-3/4">
+                <input type="password" placeholder="密码" class="h-full w-full outline-0">
+            </div>
+        </li>
+    </ul>
+    <div class="m-4">
+        <button class="bg-yellow-400 rounded text-center text-white w-full h-12 text-xl font-bold">登陆</button>
+        <button onclick="location.href='register.html'" class="bg-gray-200 text-xl rounded w-full h-12 mt-4 font-bold">去注册</button>
+    </div>
+    <!--    底栏部分-->
+    <div class="fixed bottom-0 w-full h-16 text-gray-500 bg-gray-50  flex justify-around items-center">
+        <div class="text-center cursor-pointer" onclick="location.href='index.html'">
+            <i class="fa fa-home"></i>
+            <div>首页</div>
+        </div>
+        <div class="text-center cursor-pointer">
+            <i class="fa fa-compass"></i>
+            <div>发现</div>
+        </div>
+        <div class="text-center cursor-pointer" onclick="location.href='orderList.html'">
+            <i class="fa fa-file-text-o"></i>
+            <div>订单</div>
+        </div>
+        <div class="text-center cursor-pointer" onclick="location.href='login.html'">
+            <i class="fa fa-user-o"></i>
+            <div>我的</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>饿了么 我的订单</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../framework/font-awesome/css/font-awesome.min.css">
+    <script src="js/orderList.js"></script>
+</head>
+<body>
+<div class="h-full flex-grow">
+    <header class="w-full fixed top-0 z-10 h-16 bg-blue-500 text-gray-50 text-xl flex justify-center items-center">我的订单</header>
+    <!--  未支付订单-->
+    <div class="m-2 mb-16 mt-20">
+        <h3 class="text-gray-500 text-xl">未支付订单信息：</h3>
+        <!--    订单列表-->
+        <ul class="mt-5">
+            <li class="mt-2">
+                <!--        元素水平两端对齐-->
+                <div class="flex justify-between">
+                    <!--          左边部分-->
+                    <p class="text-xl text-gray-500">
+                        万家饺子（软件园E18店）
+                        <button class="text-xl" onclick="showDetail('detail1')">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </p>
+                    <!--          右边部分-->
+                    <div class="flex">
+                        <p>&#165;49</p>
+                        <button class="ml-2 bg-yellow-500 text-white rounded cursor-pointer">去支付</button>
+                    </div>
+                </div>
+                <!--        每个列表里面的子元素列表-->
+                <ul id="detail1" class="ml-2 mt-2 text-xs max-h-0 overflow-hidden">
+                    <li class="mt-2 flex justify-between">
+                        <p>纯肉鲜肉（水饺） x 2</p>
+                        <p>&#165;15</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>玉米鲜肉（水饺） x 1</p>
+                        <p>&#165;16</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>配送费</p>
+                        <p>&#165;3</p>
+                    </li>
+                </ul>
+            <li class="mt-2">
+                <!--        元素水平两端对齐-->
+                <div class="flex justify-between">
+                    <!--          左边部分-->
+                    <p class="text-xl text-gray-500">
+                        小锅饭豆腐馆（全运店）
+                        <button class="text-xl" onclick="showDetail('detail2')">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </p>
+                    <!--          右边部分-->
+                    <div class="flex">
+                        <p>&#165;55</p>
+                        <button class="ml-2 bg-yellow-500 text-white rounded cursor-pointer">去支付</button>
+                    </div>
+                </div>
+                <!--        每个列表里面的子元素列表-->
+                <ul id="detail2" class="ml-2 mt-2 text-xs max-h-0 overflow-hidden">
+                    <li class="mt-2 flex justify-between">
+                        <p>纯肉鲜肉（水饺） x 2</p>
+                        <p>&#165;15</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>玉米鲜肉（水饺） x 1</p>
+                        <p>&#165;16</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>配送费</p>
+                        <p>&#165;3</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--已支付订单-->
+    <div class="m-2 mb-16">
+        <h3 class="text-gray-500 text-xl">已支付订单信息：</h3>
+        <!--    订单列表-->
+        <ul class="mt-5">
+            <li class="mt-2">
+                <!--        元素水平两端对齐-->
+                <div class="flex justify-between">
+                    <!--          左边部分-->
+                    <p class="text-xl text-gray-500">
+                        万家饺子（软件园E18店）
+                        <button class="text-xl" onclick="showDetail('detail3')">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </p>
+                </div>
+                <!--        每个列表里面的子元素列表-->
+                <ul id="detail3" class="ml-2 mt-2 text-xs max-h-0 overflow-hidden">
+                    <li class="mt-2 flex justify-between">
+                        <p>纯肉鲜肉（水饺） x 2</p>
+                        <p>&#165;15</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>玉米鲜肉（水饺） x 1</p>
+                        <p>&#165;16</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>配送费</p>
+                        <p>&#165;3</p>
+                    </li>
+                </ul>
+            <li class="mt-2">
+                <!--        元素水平两端对齐-->
+                <div class="flex justify-between">
+                    <!--          左边部分-->
+                    <p class="text-xl text-gray-500">
+                        小锅饭豆腐馆（全运店）
+                        <button class="text-xl" onclick="showDetail('detail4')">
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    </p>
+                </div>
+                <!--        每个列表里面的子元素列表-->
+                <ul id="detail4" class="ml-2 mt-2 text-xs max-h-0 overflow-hidden">
+                    <li class="mt-2 flex justify-between">
+                        <p>纯肉鲜肉（水饺） x 2</p>
+                        <p>&#165;15</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>玉米鲜肉（水饺） x 1</p>
+                        <p>&#165;16</p>
+                    </li>
+                    <li class="mt-2 flex justify-between">
+                        <p>配送费</p>
+                        <p>&#165;3</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--    底栏部分-->
+    <div class="fixed bottom-0 w-full h-16 text-gray-500 bg-gray-50  flex justify-around items-center">
+        <div class="text-center cursor-pointer" onclick="location.href='index.html'">
+            <i class="fa fa-home"></i>
+            <div>首页</div>
+        </div>
+        <div class="text-center cursor-pointer">
+            <i class="fa fa-compass"></i>
+            <div>发现</div>
+        </div>
+        <div class="text-center cursor-pointer" onclick="location.href='orderList.html'">
+            <i class="fa fa-file-text-o"></i>
+            <div>订单</div>
+        </div>
+        <div class="text-center cursor-pointer" onclick="location.href='login.html'">
+            <i class="fa fa-user-o"></i>
+            <div>我的</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
